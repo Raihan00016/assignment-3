@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rintero</title>
-    <!-- Google Font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/1e560708ea.js" crossorigin="anonymous"></script>
-    <style>
-        .font-manrope{
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rintero</title>
+  <!-- Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/1e560708ea.js" crossorigin="anonymous"></script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'book-consult': '#ABEF5F',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
+
 <body class="font-manrope">
-    <Header></Header>
+  <header class="lg:container mx-auto mb-40 bg-gray-100">
+    <!-- bar section -->
+    <div class="navbar b-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl"><i
+            class="fa-solid fa-arrow-right -rotate-45 bg-book-consult px-2 py-2 rounded-3xl"></i>Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+
+        </ul>
+      </div>
+
+      <div class="navbar-end space-x-5 hidden lg:flex">
+        <div>
+          <a><i class="fa-solid fa-magnifying-glass bg-[#E9E9E9] px-3 py-3 rounded-3xl"></i></a>
+        </div>
+        <div>
+          <a><i class="fa-solid fa-cart-shopping bg-[#E9E9E9] px-3 py-3 rounded-3xl"></i></a>
+        </div>
+        <a class="btn bg-book-consult rounded-5xl">Book Consult<i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white px-2 py-2 rounded-3xl"></i></a>
+      </div>
+    </div>
+    <!-- banner img -->
+    <div class="justify-center items-center space-y-7 sm:mx-auto">
+      <div class="grid justify-center items-center">
+        <img src="assets/banner.png" alt="">
+      </div>
+      <div class="grid justify-center items-center text-center">
+        <h1 class="text-6xl font-bold mb-6">A barn house of this design has a <br> striking appearance</h1>
+        <p class="text-gray-600 text-base mb-6">The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood,
+          sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+        <a class="btn btn-ghost text-xl bg-[#ABEF5F]">View Details<i
+            class="fa-solid fa-arrow-right -rotate-45 bg-book-consult px-2 py-2 rounded-3xl bg-[#ABEF5F] text-black"></i></a>
+      </div>
+    </div>
+  </header>
+  <main class="lg:container mx-auto bg-gray-100">
+    <!-- we design part -->
+    <section class="pt-10">
+      <div>
+        <a class="btn btn-ghost text-xl bg-[#FFFFFF] rounded-3xl mx-2 my-2"><i
+            class="fa-solid fa-arrow-right px-2 py-2 rounded-3xl text-black"></i>About Us</a>
+            <h2>We design thoughtful, <br> liveable spaces</h2>
+            <p>The barn house captivates with its blend of rustic charm and <br>
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+      </div>
+    </section>
+  </main>
+  <footer class="lg:container mx-auto">
+
+  </footer>
 </body>
+
 </html>
