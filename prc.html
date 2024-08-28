@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features Section</title>
+    <title>Rintero</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/1e560708ea.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'book-consult': '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl px-6 py-8">
-        <!-- Concept Box -->
-        <div class="bg-pink-200 p-6 rounded-lg shadow-md text-center">
-            <i class="fas fa-lightbulb text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Concept</h3>
-            <p class="text-gray-700">
-                The barn house captivates with its blend of rustic charm and modern.
-            </p>
-        </div>
-        <!-- Design Process Box -->
-        <div class="bg-yellow-200 p-6 rounded-lg shadow-md text-center">
-            <i class="fas fa-project-diagram text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Design Process</h3>
-            <p class="text-gray-700">
-                The barn house captivates with its blend of rustic charm and modern.
-            </p>
-        </div>
-        <!-- Supervision Box -->
-        <div class="bg-green-200 p-6 rounded-lg shadow-md text-center">
-            <i class="fas fa-eye text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Supervision</h3>
-            <p class="text-gray-700">
-                The barn house captivates with its blend of rustic charm and modern.
-            </p>
-        </div>
-        <!-- Budget Planning Box -->
-        <div class="bg-blue-200 p-6 rounded-lg shadow-md text-center">
-            <i class="fas fa-file-invoice-dollar text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Budget Planning</h3>
-            <p class="text-gray-700">
-                The barn house captivates with its blend of rustic charm and modern.
-            </p>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-2xl">
+            <div class="text-center">
+                <a href="#" class="inline-flex items-center px-3 py-2 rounded-full bg-green-100 text-green-600 text-sm">
+                    → Let's Connect
+                </a>
+                <h2 class="text-3xl font-bold mt-4">Let's Discuss Next Project</h2>
+                <p class="text-gray-500 mt-2">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    featuring weathered wood, sleek metal accents.
+                </p>
+            </div>
+
+            <form action="#" class="mt-8 space-y-6">
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div>
+                        <label for="first-name" class="sr-only">First Name</label>
+                        <input id="first-name" name="first-name" type="text" required placeholder="First Name*"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="last-name" class="sr-only">Last Name</label>
+                        <input id="last-name" name="last-name" type="text" required placeholder="Last Name*"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="phone-number" class="sr-only">Phone Number</label>
+                        <input id="phone-number" name="phone-number" type="text" required placeholder="Phone Number*"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="Email Number*"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit"
+                        class="w-full py-3 px-4 bg-lime-500 hover:bg-lime-600 text-white rounded-md font-semibold text-lg focus:ring-2 focus:ring-lime-400 focus:ring-opacity-50">
+                        Send Mail
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
-</html>
